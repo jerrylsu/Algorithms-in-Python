@@ -15,7 +15,7 @@ class Solution:
                 self.traversal(graph, cur_node)
         return self.is_bipartite
     
-    def traversal(self, graph, cur_node):
+    def traversal(self, graph: List[List[int]], cur_node: int):
         if not self.is_bipartite:
             return
         self.visited[cur_node] = True
