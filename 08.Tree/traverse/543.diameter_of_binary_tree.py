@@ -14,7 +14,6 @@ class Solution:
         right = self.dfs(root.right)
         
         self.diameter = max(self.diameter, left + right)
-        depth = max(left, right) + 1
-        
-        return depth
+
+        return max(left, right) + 1   # 通过根节点的最大深度
         
